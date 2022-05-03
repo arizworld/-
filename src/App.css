@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin: 20px auto;
+}
+.itemForm{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: space-around;
+    min-width: min(400px,70%);
+    min-height: 100px;
+    padding: 20px;
+    /* font-size: 1.2rem;   */
+    background-color: #00fce7;
+    -webkit-box-shadow: 11px 21px 30px 8px rgba(155,161,156,0.56);
+    -moz-box-shadow: 11px 21px 30px 8px rgba(155,161,156,0.56);
+    box-shadow: 11px 21px 30px 8px rgba(155,161,156,0.56);
+    border-radius: 20px;
+}
+label{
+    align-self: center;
+}
+input{
+    border: 1px solid black;
+    height: 30px;
+    margin: 10px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid blue;;
+}
+.iName,.iPrice{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+.buttonContainer{
+    /* grid-column: 1/3; */
+    margin: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    /* height: 20px; */
+    border-radius: 5px;
+    width: 8rem;
+    padding: 10px;
+    color: white;
+    /* background-color: rgb(1, 255, 221); */
+}
+.btn.create{
+    background-color: blue;
+    border: 2px solid blue;
+}
+.btn.read{
+    background-color: green;
+    border: 2px solid green;
+}
+.btn.update{
+    background-color: brown;
+    border: 2px solid brown;
+}
+.btn.delete{
+    background-color: red;
+    border: 2px solid red;
+}
+.btn:hover{
+    background: white;
+    /* background-color: rgb(1, 255, 221); */
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: .5s linear ease-in-out;
+}
+
+
+
+@media (max-width:620px){
+    .itemForm{
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .iName{
+        grid-row: 1;
+    }
+    .iPrice{
+        grid-row: 2;
+    }
+    .buttonContainer{
+        grid-row: 3;
+    }
+}
+
+
+/*  table style copied */
+/* .tableDiv table{
+    overflow-x: auto;
+} */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    /* min-width: max(150px,40%) ; */
+    text-align: left;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #04AA6D;
+    color: white;
+  }
+/* img {
+      width: 20px;
+      height: 20px;
+      padding: auto;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+  } */
+.btnedit{
+    /* color: green; */
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+.btndelete{
+    filter: invert(76%) sepia(30%) saturate(3461%) hue-rotate(321deg) brightness(98%) contrast(91%);
+}
+.btnedit,.btndelete:hover{
+    cursor: pointer;
+}
+
+.accordion{
+  width: 100%;
+}
+.form-check-input{
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+}
+.form-check-label{
+  position: relative;
+  top: 11%;
+}
+#imbalance{
+  padding-top: .9rem;
+}
