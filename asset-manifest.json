@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WordFunApp/static/css/main.0f7520ce.css",
-    "main.js": "/WordFunApp/static/js/main.70b3673c.js",
+    "main.js": "/WordFunApp/static/js/main.ff373ca9.js",
     "static/js/787.719ec76d.chunk.js": "/WordFunApp/static/js/787.719ec76d.chunk.js",
     "index.html": "/WordFunApp/index.html",
     "main.0f7520ce.css.map": "/WordFunApp/static/css/main.0f7520ce.css.map",
-    "main.70b3673c.js.map": "/WordFunApp/static/js/main.70b3673c.js.map",
+    "main.ff373ca9.js.map": "/WordFunApp/static/js/main.ff373ca9.js.map",
     "787.719ec76d.chunk.js.map": "/WordFunApp/static/js/787.719ec76d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f7520ce.css",
-    "static/js/main.70b3673c.js"
+    "static/js/main.ff373ca9.js"
   ]
 }
